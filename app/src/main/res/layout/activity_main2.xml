@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5F5"
+    tools:context=".Main2Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/Base.Theme.AppCompat.Light.Dialog">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="Meetups"
+        android:textSize="30sp"
+        android:textColor="#FF015798"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/main2_activity"
+            android:textSize="23sp"
+            android:textColor="#FF424242"
+            android:id="@+id/identify"
+            android:layout_centerVertical="true"
+            android:fontFamily="casual"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/identify"
+            android:text="@string/audience"
+            android:id="@+id/audience"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/signin_buttonshape"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/audience"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Or"
+            android:fontFamily="casual"
+            android:textColor="#FF424242"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:id="@+id/or"
+            android:textSize="25sp"/>
+
+        <Button
+            android:layout_width="402dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/or"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/speaker"
+            android:background="@drawable/signin_buttonshape"
+            android:text="@string/speaker"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/main_progressbar"
+            android:clickable="true"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

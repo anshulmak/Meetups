@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Blockchain Development"
+    android:textAlignment="center"
+    android:textStyle="bold"
+    android:textColor="#FF607D8B"
+    android:id="@+id/rating_meetuptitle"
+    android:fontFamily="casual"
+    android:textSize="40sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:paddingBottom="40dp"
+        android:textSize="50sp"
+        android:id="@+id/speaker_rating"
+        android:layout_below="@+id/rating_meetuptitle"
+        android:layout_marginTop="48dp"
+        android:fontFamily="casual"
+        android:textColor="#000000"
+        android:layout_toStartOf="@+id/speaker_meetuprating"
+        android:layout_marginRight="5dp"
+        />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:numStars="5"
+        android:id="@+id/speaker_meetuprating"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:clickable="false"
+        android:stepSize="0.1"
+        android:theme="@style/RatingBar"
+        android:layout_below="@id/rating_meetuptitle"
+        android:layout_marginTop="65dp"/>
+
+    <TextView
+        android:id="@+id/number_of_ratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/speaker_meetuprating"
+        android:layout_toRightOf="@id/speaker_rating"
+        android:text="0"
+        android:textColor="#FF607D8B"
+        android:textSize="12sp"
+        android:fontFamily="casual"
+        android:layout_marginLeft="5dp"/>
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/speaker_meetuprating"
+        android:layout_toRightOf="@id/number_of_ratings"
+        android:src="@drawable/user_rating"/>
+
+
+</RelativeLayout>

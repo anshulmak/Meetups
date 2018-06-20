@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFF5F5F5"
+    android:layout_height="match_parent"
+    tools:context=".Main_Activity">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/Base.Theme.AppCompat.Light.Dialog">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="Meetups"
+        android:textSize="30sp"
+        android:textColor="#FF015798"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:id="@+id/meetups"
+        >
+       <ListView
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:focusable="false"
+           android:id="@+id/mainactivity_listview"
+           android:layout_marginTop="10dp"
+           android:focusableInTouchMode="false"
+           android:divider="#FFB3E5FC"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:id="@+id/no_meetups"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/nomeetups_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:visibility="invisible"
+            android:id="@+id/text_nomeetups"
+            android:fontFamily="casual"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_nomeetups"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:fontFamily="casual"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            android:id="@+id/nomeetups_create"
+            android:textColor="#FF00C853"
+            android:text="@string/nomeetups_create"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchorGravity="right|bottom">
+
+
+        <ProgressBar
+            android:id="@+id/main_progressbar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

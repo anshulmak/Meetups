@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Meetups</string>
+    <string name="login_page">Sign in or Login to join the Meetups</string>
+    <string name="google_signin">Continue with Google</string>
+    <string name="login_button">Continue with Email</string>
+    <string name="signin_page">Login with your email address</string>
+    <string name="signin_button">Login</string>
+    <string name="sigin_page1">DO NOT HAVE AN ACCOUNT?</string>
+    <string name="signup"><b><u>SIGNUP</u></b></string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="signup_page">Sign up to join the Meetups</string>
+    <string name="name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_meetup">Create Meetup</string>
+    <string name="signout">Logout</string>
+    <string name="title">Title</string>
+    <string name="descripton">Description (opional)</string>
+    <string name="location">Location</string>
+    <string name="speaker_name">Host Name</string>
+    <string name="speaker_occupation">Occupation</string>
+    <string name="headingnewmeetup">Create your Meetup</string>
+    <string name="main_activity">Enter your code to join the Meetup</string>
+    <string name="main2_activity">Who Are You?</string>
+    <string name="audience">Audience</string>
+    <string name="speaker">Speaker</string>
+    <string name="your_code">Your Code</string>
+    <string name="new_meetup">activity_newmeetup</string>
+
+    <string name="meetup_title">meetup_title</string>
+    <string name="meetup_id">meetup_id</string>
+    <string name="creator_id">creator_id</string>
+    <string name="key">key</string>
+    <string name="key_error">Key is not valid</string>
+    <string name="date">date</string>
+    <string name="time_from">time_from</string>
+    <string name="time_till">time_till</string>
+    <string name="meetup_question">meetup_question</string>
+    <string name="user_likes">user_likes</string>
+    <string name="question_box">What Is Your Question?</string>
+    <string name="intent_meetuproom">intent_meetuproom</string>
+    <string name="meetuproom_createdsuccessfuly">Your Meetup Room Is Created Successfully</string>
+    <string name="meetuproom_createdkey">Here is the <b>key</b> to join your meetup</string>
+    <string name="nomeetups_text">No meetups at the moment</string>
+    <string name="nomeetups_create">Create your own meetup</string>
+
+</resources>

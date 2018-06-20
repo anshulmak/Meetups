@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:descendantFocusability="blocksDescendants"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            >
+
+            <TextView
+                android:id="@+id/meetup_date"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="JUNE 16"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="casual"
+                android:textAlignment="center"
+                android:textColor="#FF00C853"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meetup_date"
+            android:id="@+id/meetup_timefrom"
+            android:text="4:00pm -"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_alignStart="@+id/meetup_date"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/meetup_date"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/meetup_timefrom"
+            android:layout_marginStart="2dp"
+            android:text="7:00pm"
+            android:fontFamily="casual"
+            android:textColor="#000000"
+            android:focusable="false"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:id="@+id/meetup_timetill"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+
+            <LinearLayout
+                android:layout_width="2dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:background="#FF616161"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_toRightOf="@+id/meetup_timetill"
+                android:orientation="vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/meetup_timetill"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="22dp"
+                android:id="@+id/meetup_title"
+                android:focusable="false"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="#000000"
+                android:fontFamily="casual"
+                android:text="Block Chain Development"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loction_icon1"
+                android:src="@drawable/placeholder_fill_point1"
+                android:layout_below="@id/meetup_title"
+                android:layout_toRightOf="@+id/meetup_timetill"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginStart="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/loction_icon1"
+                android:text="Mokriya Madhapur"
+                android:layout_below="@id/meetup_title"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="casual"
+                android:id="@+id/meetup_location"
+                android:layout_marginStart="5dp"
+                android:textColor="#FF607D8B"/>
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/meetup_location"
+                app:fabSize="mini"
+                android:id="@+id/key_check_button"
+                android:src="@drawable/key_white"
+                android:backgroundTint="#FF00C853"
+                android:layout_alignParentEnd="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

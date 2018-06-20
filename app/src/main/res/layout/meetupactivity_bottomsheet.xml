@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="ContentDescription"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FF81D4FA"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/meetuproom_createdsuccessfuly"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:id="@+id/text"
+        android:textColor="#FF263238"
+        android:paddingBottom="5dp"
+        android:textSize="30sp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/successful"
+        android:text="@string/meetuproom_createdkey"
+        android:textSize="25sp"
+        android:id="@+id/text1"
+        android:textColor="#FF37474F"
+        android:fontFamily="casual"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:textAlignment="center"
+        android:id="@+id/key_bottomsheet"
+        android:background="#FF039BE5"
+        android:textSize="35sp"
+        android:fontFamily="casual"
+        android:letterSpacing="1.2"
+        android:paddingBottom="5dp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:id="@+id/successful"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/text"
+        app:srcCompat="@drawable/maps_and_flags" />
+
+
+</RelativeLayout>

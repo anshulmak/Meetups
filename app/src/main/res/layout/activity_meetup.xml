@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5F5"
+    tools:context=".Meetup_activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="#FF42A5F5"
+        android:elevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:id="@+id/meetup_back"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="125dp"
+                android:layout_marginStart="35dp"
+                android:fontFamily="casual"
+                android:id="@+id/text_meetuproom_name"/>
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:src="@drawable/star"
+                android:layout_centerVertical="true"
+                android:id="@+id/rating"
+                android:layout_alignBottom="@+id/information"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="45dp"
+                />
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:src="@drawable/information"
+                android:layout_centerVertical="true"
+                android:id="@+id/information"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="7dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:id="@+id/question_list"
+        android:layout_below="@+id/toolbar">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/listView"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:divider="#FFB3E5FC"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="#FF90A4AE">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/sent_mail"
+                android:backgroundTint="#FF00C853"
+                android:layout_marginEnd="10dp"
+                app:fabCustomSize="45dp"
+                app:borderWidth="0dp"
+                android:background="@null"
+                android:id="@+id/send_question"
+                android:layout_alignParentEnd="true"
+                />
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="52dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:paddingTop="1dp"
+                android:fontFamily="casual"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:id="@+id/input_question"
+                android:hint="@string/question_box"
+                android:background="@drawable/question_box"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

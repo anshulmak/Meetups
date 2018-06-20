@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".information_Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        app:layout_anchorGravity="left|top">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/information_collapsingtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF015798"
+            android:fitsSystemWindows="true"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <TextView
+                android:id="@+id/information_meetupname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:fontFamily="casual"
+                android:text="Blockchain Development"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="5dp"
+                android:textSize="40sp"
+                android:layout_marginEnd="5dp"
+                android:textStyle="bold"
+                app:layout_collapseMode="parallax"/>
+
+
+            <Toolbar
+                android:id="@+id/information_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="7dp"
+                tools:targetApi="LOLLIPOP"
+                app:layout_collapseMode="pin">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:id="@+id/information_back"
+                    android:src="@drawable/back" />
+            </Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/information_scrollview"/>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
