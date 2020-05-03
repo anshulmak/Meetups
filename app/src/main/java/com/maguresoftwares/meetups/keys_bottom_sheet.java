@@ -9,10 +9,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.design.widget.BottomSheetDialogFragment;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.TextInputEditText;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
@@ -20,11 +16,14 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.textfield.TextInputEditText;
 import com.maguresoftwares.meetups.Models.meetups;
 
 import java.util.ArrayList;
 
-public class keys_bottom_sheet extends BottomSheetDialogFragment{
+public class keys_bottom_sheet extends BottomSheetDialogFragment {
 
     private ArrayList<String> Keys;
     private ArrayList<meetups> mMeetups;

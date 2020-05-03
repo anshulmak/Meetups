@@ -4,11 +4,6 @@ package com.maguresoftwares.meetups;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.ShareCompat;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +11,11 @@ import android.widget.ArrayAdapter;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.ToggleButton;
+
+import androidx.annotation.LayoutRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -46,7 +46,7 @@ public class questions_listadapter extends ArrayAdapter<meetup_questions> {
 
 
 
-   public questions_listadapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<meetup_questions> objects ,@NonNull String meetup_id,@NonNull String creator_id ) {
+   public questions_listadapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<meetup_questions> objects , @NonNull String meetup_id, @NonNull String creator_id ) {
         super(context, resource, objects);
         mContext = context;
         mLayoutResource = resource;

@@ -3,9 +3,10 @@ package com.maguresoftwares.meetups;
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.os.Bundle;
-import android.support.design.widget.BottomSheetDialogFragment;
 import android.view.View;
 import android.widget.TextView;
+
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 public class bottom_sheet extends BottomSheetDialogFragment {
 
